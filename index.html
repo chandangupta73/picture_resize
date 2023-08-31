@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main">
+        <div id="first-row">
+            <div class="first-container">
+                <button id="save-img">Save Template</button>
+            </div>
+            <div class="second-container">
+                <p>Name</p>
+                <input class="template" type="text" placeholder="Template">
+            </div>
+            <div class="third-container">
+                <button class="undo-redo">Undo</button>
+                <button class="undo-redo">Redo</button>
+            </div>
+            <div class="fourth-container">
+                <p>New Layer</p>
+                <p>+</p>
+            </div>
+            <div class="fifth-container">
+                Layers
+                <button class="layers">
+                    <p>Text_1</p>
+                    <p>...</p>
+                </button>
+                <button class="layers">
+                    <p>Text_2</p>
+                    <p>...</p>
+                </button>
+                <button class="layers">
+                    <p>Text_3</p>
+                    <p>...</p>
+                </button>
+                <button class="layers">
+                    <p>image_container</p>
+                    <p>...</p>
+                </button>
+            </div>
+            <div class="sixth-container">
+                <p>DisableGuides</p>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div id="second-row">
+            <!-- <img id="banner"src="img.jpg" alt=""> -->
+            <div class="image">
+                <img id="previewImage" src="#" alt="Preview">
+            </div>
+        </div>
+        <div id="third-row">
+            <div class="first-column">
+                <div class="image-name">
+                    <button>Name</button>
+                    <input type="text" placeholder="image_container">
+                </div>
+                <div id="banner" class="widdth-hieght">
+                    <button onclick="resizeBanner()">W</button>
+                    <input type="number" id="bannerWidthInput" placeholder="width">
+                    <button onclick="resizeBanner()">H</button>
+                    <input type="number" id="bannerWidthInput" placeholder="hight">
+                </div>
+                <div class="axis">
+                    <button>X</button>
+                    <input type="text" placeholder="X-axis">
+                    <button>Y</button>
+                    <input type="text" placeholder="Y-axis">
+                </div>
+                <div class="angle">
+                    <button>Angle</button>
+                    <input type="text" placeholder="type-angle">
+                </div>
+                <div class="opacity">
+                    <button>Opacity</button>
+                    <input type="text" placeholder="type-opacity">
+                </div>
+                <div class="rotate">
+                    <button>Rotate-x</button>
+                    <input type="text" placeholder="type-rotate-x">
+                </div>
+                <div class="rotate">
+                    <button>Rotate-y</button>
+                    <input type="text" placeholder="rotate-y">
+                </div>
+                <div class="rotate">
+                    <button>Rotate-z</button>
+                    <input type="text" placeholder="type-rotate-z">
+                </div>
+            </div>
+            <div class="second-column">
+                <div class="image" id="s-previewContainer">
+                    <img id="s-previewImage" src="#" alt="Preview">
+                </div>
+                <input type="file" id="fileInput" accept="image/*" placeholder="choose photo">
+                <div class="face-detection">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Face Detection</p>
+                </div>
+                <div class="smart-crop">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Smart Crop</p>
+                </div>
+                <div class="type-of-img">
+                    <button>Type</button>
+                    <select>
+                        <option value="jpg">jpg</option>
+                        <option value="png">png</option>
+                    </select>
+                </div>
+                <div class="anchor">
+                    <button>Anchor-X</button>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="anchor">
+                    <button>Anchor-Y</button>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="effect">
+                    <button>Effect</button>
+                    <select>
+                        <option value="1">efect1</option>
+                        <option value="2">efect2</option>
+                        <option value="3">efect3</option>
+                        <option value="4">efect4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="third-column">
+                <div class="shadow">
+                    <button>Shadow</button>
+                    <input type="text" placeholder="0px 2px 4px #fff">
+                </div>
+                <div class="border-color">
+                    <button>Border-Color</button>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
